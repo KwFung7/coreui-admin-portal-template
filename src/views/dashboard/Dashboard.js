@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React from 'react'
 
 import {
   CAvatar,
@@ -50,9 +50,6 @@ import avatar3 from 'src/assets/images/avatars/3.jpg'
 import avatar4 from 'src/assets/images/avatars/4.jpg'
 import avatar5 from 'src/assets/images/avatars/5.jpg'
 import avatar6 from 'src/assets/images/avatars/6.jpg'
-
-const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
-const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
 
 const Dashboard = () => {
   const random = (min, max) => {
@@ -182,7 +179,6 @@ const Dashboard = () => {
 
   return (
     <>
-      <WidgetsDropdown />
       <CCard className="mb-4">
         <CCardBody>
           <CRow>
@@ -309,8 +305,6 @@ const Dashboard = () => {
           </CRow>
         </CCardFooter>
       </CCard>
-
-      <WidgetsBrand withCharts />
 
       <CRow>
         <CCol xs>
